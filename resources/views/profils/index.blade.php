@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -31,7 +31,9 @@
                             @foreach($profils as $profil)
                                 <tr>
                                     <td>{{ $profil->name }}</td>
-                                    <td>{{ $profil->is_done ? 'Done' : 'Not Done' }}</td>
+                                    <td>{{ $profil->email }}</td>
+                                    <td>{{ $profil->nik }}</td>
+                                    <td>{{ $profil->position }}</td>
                                     <td>
                                         <a class="btn btn-warning" href="{{ url('profils/'.$profil->id.'/edit') }}">Edit</a>
                                         <a class="btn btn-danger" href="{{ url('profils/'.$profil->id.'/delete') }}">Delete</a>
