@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoController;
+use App\Http\Controllers\ProfilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +49,33 @@ Route::put('todos/{todo}', [TodoController::class, 'update']);
  * Delete Todo
  */
 Route::get('/todos/{todo}/delete', [TodoController::class, 'delete']);
+
+Route::get('/profils', [ProfilController::class, 'index']);
+
+/**
+ *  Show create profil form
+ */
+Route::get('/profils/create', [ProfilController::class, 'create']);
+
+/**
+ * Add profil
+ */
+Route::post('/profils', [ProfilController::class, 'store']);
+
+/**
+ * Show edit profil
+ */
+Route::get('profils/{profil}/edit', [ProfilController::class, 'edit']);
+
+/**
+ * update profil
+ */
+Route::put('profils/{profil}', [ProfilController::class, 'update']);
+
+/**
+ * Delete profil
+ */
+Route::get('/profils/{profil}/delete', [ProfilController::class, 'delete']);
 
 Auth::routes();
 
