@@ -7,7 +7,8 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Todo List</div>
                 <div class="panel-body">
-                    <a href="{{ url('todos/create') }}" class="btn btn-primary">Add todo</a>
+                    <a href="{{ url('/home') }}" class="btn btn-danger"> Back </a>
+                    <a href="{{ url('todos/create') }}" class="btn btn-primary">Add </a>
 
                     <br>
                     <br>

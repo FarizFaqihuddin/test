@@ -7,6 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Profil List</div>
                 <div class="panel-body">
+                    <a href="{{ url('/home') }}" class="btn btn-danger"> Back </a>
                     <a href="{{ url('profils/create') }}" class="btn btn-primary">Add </a>
 
                     <br>

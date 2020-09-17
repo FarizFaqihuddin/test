@@ -14,7 +14,13 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('You are logged in, Welcome to the agenda web application PT Teknologi Hitam Indonesia!') }}
+                    
+                    <br>
+                    <br>
+
+                    <a href="{{ url('todos/') }}" class="btn btn-success"> TO DO LIST </a>
+
                 </div>
             </div>
         </div>
