@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layouts.app')
 
 @section('content')
     <div class="container">
@@ -32,6 +32,7 @@
                             
 
                             <div class="form-group">
+                                <a href="{{ url('/profils') }}" class="btn btn-danger"> Back </a>
                                 <button type="submit" class="btn btn-primary">Add </button>
                             </div>
                         </form>

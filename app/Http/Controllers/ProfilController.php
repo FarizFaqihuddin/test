@@ -26,7 +26,7 @@ class ProfilController extends Controller
     {
         Profil::create($request->all());
 
-        return redirect('/');
+        return redirect('/profiles');
     }
 
     public function edit(Profil $profil)
@@ -38,13 +38,13 @@ class ProfilController extends Controller
     {
         $profil->update($request->all());
 
-        return redirect('/');
+        return redirect('/profiles');
     }
 
     public function delete(Profil $profil)
     {
         $profil->delete();
 
-        return redirect('/');
+        return redirect('/profiles');
     }
 }

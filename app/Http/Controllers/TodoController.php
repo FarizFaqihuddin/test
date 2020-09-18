@@ -26,7 +26,7 @@ class TodoController extends Controller
     {
         Todo::create($request->all());
 
-        return redirect('/');
+        return redirect('/todos');
     }
 
     public function edit(Todo $todo)
@@ -38,13 +38,13 @@ class TodoController extends Controller
     {
         $todo->update($request->all());
 
-        return redirect('/');
+        return redirect('/todos');
     }
 
     public function delete(Todo $todo)
     {
         $todo->delete();
 
-        return redirect('/');
+        return redirect('/todos');
     }
 }
